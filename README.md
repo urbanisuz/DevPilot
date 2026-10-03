@@ -19,7 +19,6 @@ agent/
 │   │   ├── GitManager.php  # Обертка для автоматизации Git-операций через proc_open[cite: 9]
 │   │   └── LogParser.php   # Фильтрация и парсинг логов ошибок выполнения
 │   ├── Router.php          # REST API маршрутизатор (анализ, применение фиксов, откат)
-│   └── debug_step.log      # Логи отладки выполнения шагов
 ├── config.json             # Основной конфигурационный файл[cite: 2]
 ├── config.example.json     # Шаблон конфигурации[cite: 3]
 ├── index.php               # Единая точка входа (Entry Point / Web UI / API)
