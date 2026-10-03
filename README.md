@@ -40,19 +40,22 @@ agent/
 Откройте config.json и укажите ваши ключи API (Gemini / OpenRouter), а также параметры целевых проектов (пути к исходному коду, файлам логов и доступы к базам данных MySQL):
 ```text
 JSON{
-  "gemini_api_key": "YOUR_API_KEY",
+  "gemini_api_key": "YOUR_GEMINI_API_KEY_HERE",
+  "gemini_model": "gemini-3.8-flash",
+  "openrouter_api_key": "", 
+  "openrouter_model": "YOUR_OPENROUTER_API_KEY_HERE",
   "log_window_seconds": 10,
   "projects": {
-    "project": {
-      "url": "http://cms/",
-      "path": "E:\\server\\domains\\project\\",
+    "domain.loc": {
+	  "url": "http://domain.loc/",
+      "path": "E:\\server\\domains\\domain.loc",
       "git_path": "C:\\Program Files\\Git\\mingw64\\bin\\git.exe",
-      "log_path": "E:\\server\\userdata\\logs\\PHP_8.1_error.log",
+      "log_path": "E:/server/userdata/logs/PHP_8.1_error.log",
       "db": {
         "host": "127.0.0.1",
         "user": "root",
         "pass": "",
-        "name": "cms_db"
+        "name": "domain_db"
       }
     }
   }
